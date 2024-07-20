@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class pageController {
     
-    @GetMapping("/")
+    @GetMapping("/home")
     public String home(){
         return "home";
     }
@@ -21,4 +21,20 @@ public class pageController {
     public String servicePage(){
         return "services";
     }
+
+    @GetMapping("/contact")
+    public String contactPage(){
+        return "about";
+    }
+
+    @GetMapping("/login")
+    public String loginPage(){
+        return "login";
+    }
+
+    @GetMapping("/register")
+    public String registerPage(){
+        return "register";
+    }
+
 }
